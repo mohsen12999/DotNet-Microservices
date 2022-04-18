@@ -11,3 +11,7 @@
 - build image: `docker build -t mohsen1299/platformservice .`
 - run image: `docker run -p 8080:80 -d mohsen1299/platformservice`
 - push image to docker hub: `docker push mohsen1299/platformservice`
+
+## Reference
+
+- base on video [.NET Microservices – Full Course](https://youtu.be/DgVjEo3OGBI) by [Les Jackson](https://www.youtube.com/c/binarythistle)

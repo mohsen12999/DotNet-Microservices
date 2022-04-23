@@ -19,6 +19,8 @@
 - `kubectl get deployments`
 - `kubectl get pods`
 - `kubectl delete deployment platform-depl`
+- add node port `kubectl apply -f platform-np-srv.yaml`
+- show services: `kubectl get services`
 
 ## Reference
 

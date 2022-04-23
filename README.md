@@ -1,5 +1,7 @@
 # Platform Service
 
+## Platform Service WebAPI
+
 - make project `dotnet new webapi -n PlatformService`
 - add ignore file `dotnet new gitignore`
 - add packages
@@ -21,6 +23,11 @@
 - `kubectl delete deployment platform-depl`
 - add node port `kubectl apply -f platform-np-srv.yaml`
 - show services: `kubectl get services`
+
+## Commands Services WebAPI
+
+- make project: `dotnet new webapi -n CommandsService`
+- 
 
 ## Reference
 

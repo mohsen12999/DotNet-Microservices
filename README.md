@@ -1,4 +1,6 @@
-# Platform Service
+# Dot Net Micro Controller
+
+- a project to learn dotnet, web api, docker, kubernetes, and micro services
 
 ## Platform Service WebAPI
 

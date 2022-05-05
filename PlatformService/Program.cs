@@ -31,7 +31,7 @@ if (app.Environment.IsDevelopment())
 
 Console.WriteLine($"--> Command Service Endpoint {builder.Configuration["CommandService"]}");
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

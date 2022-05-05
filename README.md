@@ -29,7 +29,8 @@
 ## Commands Services WebAPI
 
 - make project: `dotnet new webapi -n CommandsService`
-- 
+- build docker image: `docker build -t mohsen1299/commandservice .`
+- push image to docker hub: `docker push mohsen1299/commandservice`
 
 ## Reference
 

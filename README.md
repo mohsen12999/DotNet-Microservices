@@ -22,9 +22,11 @@
 - `kubectl apply -f platforms-depl.yaml`
 - `kubectl get deployments`
 - `kubectl get pods`
-- `kubectl delete deployment platform-depl`
+- `kubectl get services`
+- `kubectl delete deployment platforms-depl`
 - add node port `kubectl apply -f platform-np-srv.yaml`
 - show services: `kubectl get services`
+- restart deployment for get new image form docker file:`kubectl rollout restart deployment platforms-depl`
 
 ## Commands Services WebAPI
 

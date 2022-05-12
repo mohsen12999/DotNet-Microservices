@@ -34,6 +34,14 @@
 - build docker image: `docker build -t mohsen1299/commandservice .`
 - push image to docker hub: `docker push mohsen1299/commandservice`
 
+## Ingress Nginx
+
+- [ingress-nginx](https://github.com/kubernetes/ingress-nginx) is an Ingress controller for Kubernetes using NGINX as a reverse proxy and load balancer.
+- from getting started find the config file for this image
+`kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.2.0/deploy/static/provider/cloud/deploy.yaml`
+- create pods in difference namespace
+- see the name space `kubectl get namespace` and see the pods in the name space `kubectl get pods --namespace=ingress-nginx`
+
 ## Reference
 
 - base on video [.NET Microservices – Full Course](https://youtu.be/DgVjEo3OGBI) by [Les Jackson](https://www.youtube.com/c/binarythistle)

@@ -46,6 +46,16 @@
 
 - change hosts `C:\Windows\System32\drivers\etc` and add `127.0.0.1 acme.com`
 
+## Storage
+
+- get storage: `kubectl get storageclass`
+- we have 3 type of storage:
+  - Persistent Volume Claim
+  - Persistent Volume
+  - Storage Class
+- for see Persistent Volume Claim: `kubectl get pvc`
+- make secret in kubernetes: `kubectl create secret generic mssql --from-literal=SA_PASSWORD="pa55w0rd!"`
+
 ## Reference
 
 - base on video [.NET Microservices – Full Course](https://youtu.be/DgVjEo3OGBI) by [Les Jackson](https://www.youtube.com/c/binarythistle)

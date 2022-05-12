@@ -42,6 +42,10 @@
 - create pods in difference namespace
 - see the name space `kubectl get namespace` and see the pods in the name space `kubectl get pods --namespace=ingress-nginx`
 
+## use hostname
+
+- change hosts `C:\Windows\System32\drivers\etc` and add `127.0.0.1 acme.com`
+
 ## Reference
 
 - base on video [.NET Microservices – Full Course](https://youtu.be/DgVjEo3OGBI) by [Les Jackson](https://www.youtube.com/c/binarythistle)

@@ -56,6 +56,7 @@
 - for see Persistent Volume Claim: `kubectl get pvc`
 - make secret in kubernetes: `kubectl create secret generic mssql --from-literal=SA_PASSWORD="pa55w0rd!"`
 - after making deploy can connect from sql server application with ServerName: `localhost,1433`, login: `sa`, password: `pa55w0rd!`
+- add migration: `dotnet ef migrations add InitialMigration` if get error install dotnet-ef with `dotnet tool install --global dotnet-ef`
 
 ## Reference
 

@@ -58,6 +58,18 @@
 - after making deploy can connect from sql server application with ServerName: `localhost,1433`, login: `sa`, password: `pa55w0rd!`
 - add migration: `dotnet ef migrations add InitialMigration` if get error install dotnet-ef with `dotnet tool install --global dotnet-ef`
 
+## RabbitMQ
+
+- A Message Broker: it accepts and forward messages.
+- Messages send by Publisher and receive by Subscribers.
+- Message can store (buffer) on Queues.
+- Exchange can be used to add "routing" functionality.
+- 4 Type of Exchange:
+  - Direct Exchange - deliver message base on routing key, ideal for direct or unicast message
+  - Fanout Exchange - deliver message to all queues, ideal for broadcast
+  - Topic Exchange - route message to 1 or more queues base on the routing key (and pattern), use multicast message, implement various Publisher / Subscribers Patterns
+  - Header Exchange
+
 ## Reference
 
 - base on video [.NET Microservices – Full Course](https://youtu.be/DgVjEo3OGBI) by [Les Jackson](https://www.youtube.com/c/binarythistle)

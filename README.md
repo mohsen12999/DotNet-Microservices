@@ -69,6 +69,7 @@
   - Fanout Exchange - deliver message to all queues, ideal for broadcast
   - Topic Exchange - route message to 1 or more queues base on the routing key (and pattern), use multicast message, implement various Publisher / Subscribers Patterns
   - Header Exchange
+- connect to RabbitMq management with `localhost:15672` with username and password `guest`
 
 ## Reference
 

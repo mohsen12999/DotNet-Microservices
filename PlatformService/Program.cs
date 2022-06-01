@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using PlatformService.AsyncDataServices;
 using PlatformService.Date;
 using PlatformService.SyncDataServices.Http;
 
@@ -6,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-if(builder.Environment.IsProduction())
+if (builder.Environment.IsProduction())
 {
     Console.WriteLine("--> Using SqlServer Db");
     builder.Services.AddDbContext<AppDbContext>(opt =>
@@ -22,7 +23,8 @@ else
 builder.Services.AddScoped<IPlatformRepo, PlatformRepo>();
 
 builder.Services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
- 
+builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
+
 builder.Services.AddControllers();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

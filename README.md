@@ -74,6 +74,15 @@
 
 - add RabbitMQ as a package to project: `dotnet add package RabbitMQ.Client`
 
+## gRPC
+
+- google Remote Procedural Call
+- use HTTP/2 protocol to transport binary message (include TLS).
+- very light weight and fucus on high performance.
+- relies on "Protocol Buffers" (aka Protobuf) to define between end point.
+- multi-language support.
+- frequently use as a method of service to service communication.
+
 ## Reference
 
 - base on video [.NET Microservices – Full Course](https://youtu.be/DgVjEo3OGBI) by [Les Jackson](https://www.youtube.com/c/binarythistle)

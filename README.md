@@ -83,6 +83,8 @@
 - multi-language support.
 - frequently use as a method of service to service communication.
 
+- add grpc as a package to project: `dotnet add package Grpc.AspNetCore`
+
 ## Reference
 
 - base on video [.NET Microservices – Full Course](https://youtu.be/DgVjEo3OGBI) by [Les Jackson](https://www.youtube.com/c/binarythistle)

@@ -83,7 +83,8 @@
 - multi-language support.
 - frequently use as a method of service to service communication.
 
-- add grpc as a package to project: `dotnet add package Grpc.AspNetCore`
+- add grpc as a package for sender: `dotnet add package Grpc.AspNetCore`
+- add grpc as a package for reciever: `dotnet add package Grpc.Tools`, `dotnet add package Grpc.Net.Client`, `dotnet add package google.Protobuf`
 
 ## Reference
 

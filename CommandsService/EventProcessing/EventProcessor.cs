@@ -23,7 +23,7 @@ public class EventProcessor : IEventProcessor
         switch (eventType)
         {
             case EventType.PlatformPublished:
-                // TODO: Process PlatformPublished event
+                AddPlatform(message);
                 break;
 
             default:
@@ -63,6 +63,7 @@ public class EventProcessor : IEventProcessor
                 {
                     repo.CreatePlatform(plat);
                     repo.SaveChanges();
+                    Console.WriteLine("--> Platform added!");
                 }
                 else
                 {

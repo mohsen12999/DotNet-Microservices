@@ -15,7 +15,7 @@ public class GrpcPlatformService : GrpcPlatform.GrpcPlatformBase
         _mapper = mapper;
     }
     
-    public override Task<PlatformResponse>  GetAllPlatform(GetAllRequest request, ServerCallContext context)
+    public override Task<PlatformResponse>  GetAllPlatforms(GetAllRequest request, ServerCallContext context)
     {
         var response = new PlatformResponse();
         var platforms = _repository.GetAllPlatforms();
